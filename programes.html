@@ -2,37 +2,42 @@
 <html>
 		<head>
 			<title>Programes</title>
+			<link rel="stylesheet" type="text/css" href="./css/programes.css">
 		</head>
 	<body>
-		<header>
+		<section align="center">
+			<header>
 			<fieldset>
 				<nav >
-					Logo &nbsp;&nbsp;
-					<input type="search" name="search"> &nbsp;&nbsp;
-					Gallary &nbsp;&nbsp;
-					<a href="about.html">About</a>&nbsp;&nbsp;
-					<a href="programes.html">Programs</a>&nbsp;&nbsp;
-					CRM&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-					<select>
-  					<option value="user">Users</option>
-  					<option value="profile">Profile</option>
- 						<option value="logout">LogOut</option>
-					</select>
-
-				</nav>
+				Logo &nbsp;&nbsp;
+				<input type="search" name="search" value="Search"> &nbsp;&nbsp;
+				Gallary &nbsp;&nbsp;
+				<a href="about.html">About</a>&nbsp;&nbsp;
+				<a href="#">Programs</a>&nbsp;&nbsp;
+				CRM&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<div class="dropdown">
+ 					<button class="dropbtn">
+  					<div id="div1"></div>
+						<div id="div1"></div>
+					</button>
+					<div class="dropdown-content">
+    				<a href="#">User</a>
+    				<a href="#">Profile</a>
+    				<a href="#">Sign out</a>
+  				</div>
+				</div>
+			</nav>
 			</fieldset>
-		</header><br><br>
-	<table>
-	<tr>
-		<td>	
-
-			<table border="1" >
-				<tr>
-					<td colspan="6">Users</td>
+		</header>
+		</section>
+		<br><br>
+		<h4 id="h4">Users</h4>
+		<div id="containor">
+			<div id="inside">
+				<table  bgcolor="white" border="non">
+					<h4>Users</h4>
+					<input type="search" name="user search" value="user search" id="search"> <u>Refresh</u></td>
 				</tr>
-				<tr>
-			  <td colspan="6"><input type="search" name="user search" value="user search"> <u>Refresh</u></td>
-			 	</tr>
 			      <tr >
 			        <th>User</th>
 			        <th>org</th>
@@ -41,11 +46,10 @@
 			        <th>Dashbord</th>
 			        <th>Submit</th>
 			      </tr>
-
-			      <tr>
+			        <tr>
 			        <td>Arun</td>           
 			        <td></td>
-			        <td>Yes</td>
+			        <td bgcolor="#98e03a">Yes</td>
 			        <td>07/23/2014</td>
 			        <td></td>
 			        <td></td>
@@ -58,23 +62,25 @@
 			        <td>04/25/2016 </td>
 			        <td></td>
 			      </tr>
-			      <tr>
+			        <tr>
 			        <td>Karthik</td>            
 			        <td>Dishler laser institue</td>
-			        <td>Yes</td>
+			        <td bgcolor="#98e03a">Yes</td>
 			        <td></td>
 			        <td>10/04/2016</td>
 			        <td></td>
 			      </tr>
+			      
 			      <tr>
 			        <td>Ram</td>            
 			        
 			        <td>Epicsoft</td>
-			        <td>Yes</td>
+			        <td bgcolor="#98e03a">Yes</td>
 			        <td></td>
 			        <td>11/13/2014</td>
 			        <td></td>
-			      </tr>
+			        </tr>
+
 			      <tr>
 			        <td>Ajay</td>           
 			        <td>25</td>
@@ -82,28 +88,42 @@
 			        <td>5000</td>
 			        <td>Developer</td>
 			      </tr>
+			      
 			</table>
-		</td>
-    <td>
-    	<h5>User Create</h5>
-    	<form >
-	    	Email <input type="Email" name="Email"><br>
-	    	Password <input type="Password" name="Password"><u>show</u><br><br>
-	    	Counselor Name <input type="test" name="first name" value="first name"><input type="test" name="first name" value="first name"> <br><br>
-	    	Active <input type="radio" name="Yes" value="Yes">Yes<input type="radio" name="No" value="No">No
-	    	Admin <input type="radio" name="Yes" value="Yes">Yes<input type="radio" name="No" value="No">No<br><br>
-	    	Display name <input type="radio" name="Yes" value="Yes">Yes<input type="radio" name="No" value="No">No
-	    	Submit Data <input type="radio" name="Yes" value="Yes">Yes<input type="radio" name="No" value="No">No<br><br>
-	    	Translation <input type="radio" name="Yes" value="Yes">Yes<input type="radio" name="No" value="No">No 
-	    	Dashbord user <input type="radio" name="Yes" value="Yes">Yes<input type="radio" name="No" value="No">No<br><br>
-	    	Show reporting <input type="radio" name="Yes" value="Yes">Yes<input type="radio" name="No" value="No">No 
-	    	privacy filter <input type="radio" name="Yes" value="Yes">Yes<input type="radio" name="No" value="No">No<br><br>
-	    	Clinic Key<input type="text" name="Clinic Key"><br>
-	    	Organization Name<input type="text" name="Organization name"><br>
-	    	Admin timeout<input type="text" name="Admin timeout"><br>
-	    	Login Timeout<input type="text" name="Login timeout"><br>
-	    	<input type="Submit" name="Submit"value="Create">
+			<div id="num">
+			      	<div id="nums"><<</div>
+			      	<div id="nums"><</div>
+			      	<div id="nums">1</div>
+			      	<div id="nums">2</div>
+			      	<div id="nums">3</div>
+			      	<div id="nums">4</div>
+			      	<div id="nums">></div>
+			      	<div id="nums">>></div>
+			      </div>
+			</div>
+			<div id="inside1">
+				<form >
+					<h4 id="h3">Create User</h4>
+	    		<p>Email <input type="Email" name="Email" id="Email"></p>
+	    		<p>Password <input type="Password" name="Password" id="Password"><u>show</u></p>
+	    		<p>Counselor Name <input type="test" name="first name" value="first name" id="fname">
+	    			<input type="test" name="first name" value="Second name" id="sname">
+	    		</p>
+	    			Active <input type="radio" name="Yes" value="Yes" id="radio">Yes<input type="radio" name="No" value="No">No
+	    			&#09;&#09;Admin <input type="radio" name="Yes" value="Yes">Yes<input type="radio" name="No" value="No">No<br><br>
+	    			Display name <input type="radio" name="Yes" value="Yes" id="radio1">Yes<input type="radio" name="No" value="No">No
+	    			Submit Data <input type="radio" name="Yes" value="Yes">Yes<input type="radio" name="No" value="No">No<br><br>
+	    			Translation <input type="radio" name="Yes" value="Yes" id="radio2">Yes<input type="radio" name="No" value="No">No 
+	    			Dashbord user <input type="radio" name="Yes" value="Yes">Yes<input type="radio" name="No" value="No">No<br><br>
+	    			Show reporting <input type="radio" name="Yes" value="Yes" id="radio3">Yes<input type="radio" name="No" value="No">No 
+	    			privacy filter <input type="radio" name="Yes" value="Yes">Yes<input type="radio" name="No" value="No">No<br><br>
+	    			Clinic Key<input type="text" name="Clinic Key" id="key"><br><br>
+	    			Organization Name<input type="text" name="Organization name" id="name"><br><br>
+	    			Admin timeout<input type="text" name="Admin timeout" id="timeout"><br><br>
+	    	Login Timeout<input type="text" name="Login timeout" id="timeout1"><br><br>
+	    	<input type="Submit" name="Submit"value="Create" id="create">
     	</form>
-    </td>    
+			</div>
+		</div>
 	</body>
 </html>
